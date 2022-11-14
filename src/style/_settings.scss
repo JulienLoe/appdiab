@@ -8,12 +8,17 @@
 }
 
 body {
+    height: 100vh;
     background-color: black;
     color: darkgrey;
 }
 
+#root{
+    height: 100vh;
+}
+
 h1 {
-    margin-top: 50px;
+    color: aqua;
 }
 
 li {
@@ -21,10 +26,9 @@ li {
 }
 
 .titre {
-    display: flex;
     justify-content: space-between;
 }
 
-#root {
-    display: flex;
+input {
+    margin-top: 60px;
 }

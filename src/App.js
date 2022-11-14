@@ -1,17 +1,35 @@
-// import { useRef, useState } from 'react';
+// import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Contact from './pages/Contact';
 import Home from './pages/Home';
+// import Callback from './components/Callback';
+import CreatePlanet from './pages/CreatePlanet';
+import Planets from './pages/Planets';
+
+// const [inColor, setinColor] = useState(null);
+
+// const getColor = (color) => {
+  // setinColor(color);
+// }
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className='page'>
+    {/* <div style={{background:'${color}'}}></div> */}
+    {/* <Callback /> */}
+    
+    <BrowserRouter> 
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/createPlanet' element={<CreatePlanet />} />
+        <Route path='/planets' element={<Planets />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
     </BrowserRouter>
+    </div>
+
   )
+}
 
   /*let [fiche, setFiche] = useState([{
     id: 1,
@@ -53,5 +71,5 @@ function App() {
 
   );
   */
-}
+
 export default App;
